@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 62.5%;
+    /*Primary*/
+    --light-blue: #666Ca3;
+    --dark-blue: #13183f;
+    --light-pink: #ffa7c3;
+    --dark-pink: #f74780;
+    /*Neutral*/
+    --dark-gray: #83869a;
+    --white: #ffff;
+    /*Gradients*/
+    --gradient-1-primary: #f02AA6;
+    --gradient-1-secondary: #ff6f48;
+    --gradient-2-primary: #4851ff;
+    --gradient-2-secondary: #f02aa6;
+}
+/*
+==========================
+BUTTONS
+==========================
+*/
+.btn-default, .btn-primary, .btn-secondary {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: normal;
+    width: 167px;
+    height: 63px;
+    border-radius: 28px;
+    border: none;
+    color: var(--white);
+    line-height: 2.8rem;
+}
+.btn-primary:hover, .btn-secondary:hover, .btn-default:hover {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: normal;
+    width: 167px;
+    height: 63px;
+    border-radius: 28px;
+    border: none;
+    opacity: 50%;
+    color: var(--white);
+    cursor: pointer;
+    line-height: 2.8rem;
+    transition: 0.3s;
+}
+.btn-default {
+    background-color: var(--dark-blue);
+}
+.btn-primary {
+    background-image: linear-gradient(to bottom, var(--gradient-1-secondary), var(--gradient-1-primary));
+}
+.btn-secondary {
+    background-image: linear-gradient(to bottom, var(--gradient-2-primary), var(--gradient-2-secondary));
+}
+.btn-card{
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: var(--gradient-1-primary);
+    background-color: transparent;
+    border: none;
+}
+/*
+==========================
+TYPOGRAPHY
+==========================
+*/
+.title-xl {
+    color: var(--dark-blue);
+    font-size: 5.6rem;
+    font-weight: 900;
+    line-height: 7rem;
+}
+.title-l {
+    color: var(--dark-blue);
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 5.1rem;
+}
+.title-m {
+    color: var(--dark-blue);
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 4rem;
+}
+.title-s {
+    color: var(--dark-blue);
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 2.8rem;
+}
+.text-m {
+    color: var(--dark-gray);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+.text-s {
+    color: var(--dark-gray);
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 2.8rem;
+}
+
+/*
+==========================
+CARDS
+==========================
+*/
+.card-bg{
+    background-image: linear-gradient(to bottom, var(--gradient-1-secondary), var(--gradient-1-primary));
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: var(--white);
+    padding: 32px;
+}
+.card {
+    width: 350px;
+    height: 322px;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.055);
+    border-radius: 15px;
+    padding: 0px 32px;
+}
+.card-img{
+}
+.card-title{
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 3.24rem;
+    color: var(--dark-blue);
+    padding: 0px 0px 24px 0px;
+}
+.card-content{
+    padding: 0px 0px 24px 0px;
+}

@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 40px;
+        width: 768px;
+        margin: auto;
+    }
+    .card {
+        width: 450px;
+    }
+    .main-content {
+
+    }
+    
+    header {
+        
+    }
+}

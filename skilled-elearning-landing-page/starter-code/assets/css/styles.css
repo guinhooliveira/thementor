@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url('variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.hero {
+    width: 1040px;
+    background-color: red;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+header img {
+    height: 2rem;
+}
+
+header button {
+    margin-right: 320px;
+}
+
+main {
+    width: 90vw;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.main-middle {
+    width: 457px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-content h1 {
+
+}
+
+.main-content p {
+
+}
+
+.main-content button {
+
+}
+
+picture {
+    position: relative;
+}
+
+picture img {
+    position: absolute;
+    right: -380px;
+    top: -290px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+aside.cards-content {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px;
+}
+
+.card-main {
+    padding: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--dark-blue);
+    padding: 24px;
+}
+
+footer img {
+    height: 2rem;
+}
+
+@media only screen and (max-width: 717px) {
+
+}

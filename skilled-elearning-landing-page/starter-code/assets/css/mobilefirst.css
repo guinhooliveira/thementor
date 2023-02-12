@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url('variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&display=swap');
+/*
+==========================
+TABLET
+==========================
+*/
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+
+        padding: 40px;
+    }
+    
+    .content header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 250px;
+    }
+
+    header img {
+        padding-top: 20px;
+    }
+
+    main {
+        width: 420px;
+        
+    }
+
+    .main-content {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .main-middle {
+        width: 400px;
+        padding-top: 100px;
+    }
+
+    .main-middle h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: 5.04rem;
+        color: var(--dark-blue);
+
+        padding-bottom: 28px;
+    }
+
+    .main-content > picture.image {
+        align-self: center;
+
+        width: 640px;
+        height: 640px;
+        background-color: red;
+    }
+
+
+}
+/*
+==========================
+MOBILE
+==========================
+*/
+@media (max-width: 375px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+
+        padding: 16px;
+    }
+
+    .content header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    header img {
+        padding-top: 20px;
+    }
+
+    .main-middle {
+        padding-top: 38px;
+    }
+
+    .main-middle h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: 5.04rem;
+        color: var(--dark-blue);
+
+        padding-bottom: 28px;
+    }
+
+    .main-middle p {
+        padding-bottom: 24px;
+    }
+
+    .main-content picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        background-color: var(--dark-blue);
+        width: 375px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+
+    .footer-content img {
+        padding: 20px;
+    }
+}
