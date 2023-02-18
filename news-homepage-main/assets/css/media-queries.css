@@ -118,12 +118,13 @@
         display: grid;
         height: 70vh;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas: 
-        "img new"
-        "text new";
-        column-gap: 40px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img new"
+            "text new";
+        column-gap: 1px;
         row-gap: 10px;
+        justify-content: center;
     }
 
     .hero-asides {
@@ -165,15 +166,9 @@
 }
 
 @media (min-width: 1440px) {
-    .hero-asides {
-        height: 463px;
-    }   
-    
-    .hero-articles {
-        justify-content: space-between;
-        gap: 100px;
+    .hero-container {
+        margin: auto;
     }
-
     .hero-articles > h1 {
         width: 300px;
         padding: 20px 0px;
@@ -193,6 +188,10 @@
         font-size: 1.46rem;
         line-height: 2.1rem;
         color: var(--dark-grayish-blue);  
+    }
+
+    .hero-asides {
+        width: 400px;
     }
 
     .aside-cards {

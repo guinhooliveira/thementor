@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+   /****************
+    *   COLORS     *
+    ***************/
+    
+    /* Primary */
+    --light-red: hsla(0, 100%, 67%, 0.058);
+    --orangey-yellow: hsla(39, 100%, 56%, 0.058);
+    --green-teal: hsla(166, 100%, 37%, 0.058);
+    --cobalt-blue: hsla(234, 85%, 45%, 0.058);
+    --red: hsl(0, 100%, 67%);
+    --yellow: hsl(39, 100%, 56%);
+    --green: hsl(166, 100%, 37%);
+    --cobalt: hsl(234, 85%, 45%);
+    /*Gradients*/
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0.349);
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    /*Font resize*/
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body, html {
+    width: 100vw;
+    font-family: 'Hanken Grotesk', sans-serif;
+    overflow: hidden;
+}
+/***************
+*     MAIN     *
+***************/
+.container {
+    display: flex;
+    flex-direction: column;
+}
+/***************
+*     CARD     *
+***************/
+.card {
+    padding: 40px 20px;
+    border-radius: 0px 0px 30px 30px;
+    background: linear-gradient(to top, var(--light-royal-blue), var(--light-slate-blue));
+}
+
+.score-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-result .card-title {
+    padding: 5px 0px 25px 0px;
+    color: var(--light-lavender);
+}
+
+.score-circle {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--violet-blue),transparent);
+    border-radius: 50%;
+}
+
+.score-circle .score-actual {
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.score-circle .score-total {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.397);
+}
+
+.score-avaliation {
+    padding: 25px 0px 10px 0px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.score-result p {
+    margin: auto;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--light-lavender);
+}
+
+/***************
+*    ASIDE     *
+***************/
+.summary {
+    padding: 25px 0px;
+    width: 90vw;
+    margin: auto;
+    font-size: 1.6rem;
+}
+
+.summary-title {
+    color: var(--dark-gray-blue);
+}
+
+.card-summary {
+    padding: 15px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
+}
+
+.card-summary span {
+    color: rgb(180, 179, 179);
+    font-weight: 800;
+}
+
+.card-summary strong {
+    padding-right: 3px;
+    color: var(--dark-gray-blue);
+    font-weight: 800;
+}
+
+.card-summary > .aside-card-title {
+    flex: 1 1 200px;
+}
+
+.card-summary h3 {
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.reaction {
+    background: var(--light-red);
+}
+.reaction h3 {
+    color: var(--red);
+}
+
+.memory {
+    background: var(--orangey-yellow);
+}
+.memory h3 {
+    color: var(--yellow);
+}
+
+.verbal {
+    background: var(--green-teal);
+}
+.verbal h3 {
+    color: var(--green);
+}
+
+.visual {
+    background: var(--cobalt-blue);
+}
+
+.visual h3 {
+    color: var(--cobalt);
+}
+
+.btn-continue {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-continue button {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 20px;
+    background: var(--dark-gray-blue);
+    border: none;
+    border-radius: 30px;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.btn-continue button:hover {
+    background: linear-gradient(to top, var(--light-royal-blue), var(--light-slate-blue));
+    cursor: pointer;
+    transition: .3s;
+}
+
+@media (min-width: 1024px) {
+    .main {
+        margin: 20% auto;
+        width: 75vw;
+    }
+    .container {
+        flex-direction: row;
+        border-radius: 20px 20px;
+        box-shadow: 1px 5px 20px 5px rgb(129 124 124 / 8%);
+    }
+    .card {
+        width: 100%;
+        border-radius: 30px 30px;
+    }
+
+    .score-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .score-circle .score-actual {
+        font-size: rem;
+        font-weight: 800;
+        line-height: 7rem;
+        color: var(--white);
+    }
+
+    .score-result p {
+        padding: 10px 40px 0px 40px;
+    }
+
+    .summary {
+        padding: 40px 50px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main {
+        margin: 15% auto;
+        width: 50vw;
+    }
+
+    .container > .card {
+        width: 85vw;
+    }
+
+    .summary {
+        padding: 20px 40px;
+    }
+
+    .card-summary > .aside-card-title {
+        flex: 1 1 100px;
+    }
+}

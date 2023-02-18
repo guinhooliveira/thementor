@@ -24,23 +24,23 @@
     box-sizing: border-box;
 }
 
-/* HEADER */
-header {
-    padding: 10px 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr;
-}
-
-#logo {
-    margin: 10px;
-    height: 20px;
-}
-
 /* CONTAINER */
 .container {
     width: 90vw;
     margin: auto;
     background: var(--off-white);
+}
+
+/* HEADER */
+header {
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#logo {
+    margin: 10px;
+    height: 20px;
 }
 
 /* HERO / MAIN */
