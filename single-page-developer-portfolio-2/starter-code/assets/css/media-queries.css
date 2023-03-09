@@ -1,0 +1,415 @@
+@media (min-width: 768px) {
+    /* Header */
+    .header {
+        width: 90vw;
+        margin: auto;
+        position: relative;
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    .nav-bar img { 
+        height: 20px;
+        margin-left: 25px; 
+    }
+
+    /* Hero */
+    .hero { 
+        position: relative;
+        justify-content: space-evenly; 
+    }
+
+    .hero-patterns > .hero-rings {
+        position: absolute;
+        top: 0;
+        right: 200px;
+    }
+    
+    .hero-patterns > .hero-circle {
+        position: relative;
+        left: 380px;
+        top: 355px;
+        z-index: 1;
+    }
+
+    .image-mask {
+        position: absolute;
+        width: 322px;
+        height: 600px;
+        left: 126px;
+        top: -115px;
+        z-index: 1;
+    }
+
+    .main-image {
+        border: 1px solid var(--color-2);
+        position: absolute;
+        width: 322px;
+        height: 600px;
+        left: 126px;
+        top: -115px;
+        z-index: 0;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 91.5vw;
+        margin: 0px auto 0px auto;
+        z-index: 1;
+    }
+
+    .hero-title {
+        position: absolute;
+        top: 65px;
+        bottom: 0px;
+        width: 445px;
+        font-size: 7.2rem;
+        font-weight: 700;
+        line-height: 7.2rem;
+        letter-spacing: -2.05px;
+        text-align: start;
+    }
+
+    .title-1::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    .hero-subtitle {
+        padding: 230px 0px 32px 0px;
+        width: 445px;
+        text-align: start;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.8rem;
+        color: var(--color-4);
+    }
+    
+    /* Experience */
+    .experience-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: flex-start;
+        text-align: start;
+    }
+
+    .exp-title {
+        padding-bottom: 14px;
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 5.6rem;
+        letter-spacing: -1.5px;
+    }
+
+    .exp-subtitle {
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 2.8rem;
+        color: var(--color-4);
+    }
+    
+    .divider-2 { display: none; }
+    .exp-rings {
+        position: absolute;
+        top: 425px;
+        right: -370px;
+    }
+
+    /* Projects */
+    .projects {
+        width: 92.5vw;
+        padding-top: 72px;
+    }
+
+    .proj-title {
+        font-size: 7.2rem;
+        font-weight: 700;
+        line-height: 7.2rem;
+        letter-spacing: -2.05px;
+    }
+
+    .proj-card-thumb .card-thumb { height: 252px; }
+    .proj-cards {
+        width: 90vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    /* Footer */
+    .footer-title {
+        font-size: 7.2rem;
+        font-weight: 700;
+        line-height: 7.2rem;
+        letter-spacing: -2.05px;
+    }
+
+    /* Form footer */
+    .form {
+        width: 445px;
+        margin: auto;
+        display: flex;
+    }
+
+    .form-input, .form-message {
+        width: 57vw;
+        margin: auto;
+    }
+
+    .footer-subtitle {
+        width: 445px;
+        margin: auto;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.8rem;
+        color: var(--color-4);
+    }
+
+    .footer-rings {
+        position: absolute;
+        right: 440px;
+        top: 300px;
+    }
+
+    /* Footer nav */
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-nav-title {
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        letter-spacing: -0.444444px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Hero */
+    .hero-patterns > .hero-circle {
+        position: relative;
+        left: 70px;
+        top: 400px;
+    }
+    .image-mask {
+        position: absolute;
+        width: 445px;
+        height: 720px;
+        left: 131px;
+        top: -125px;
+        z-index: 1;
+    }
+
+    .main-image {
+        border: 1px solid var(--color-2);
+        position: absolute;
+        width: 445px;
+        height: 720px;
+        left: 131px;
+        top: -125px;
+        z-index: 0;
+    }
+
+    .hero-title {
+        position: absolute;
+        top: 65px;
+        bottom: 0px;
+        width: 706px;
+        font-size: 8.6rem;
+        font-weight: 700;
+        line-height: 8.8rem;
+        letter-spacing: -2.5px;
+        text-align: start;
+    }
+
+    /* Experience */
+    .experience-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: start;
+    }
+
+    .exp-rings {
+        position: absolute;
+        top: 415px;
+        right: -420px;
+    }
+
+    .experience .divider { margin: 104px 0px; }
+
+    /* Projects */
+    .projects {
+        display: flex;
+        flex-flow: nowrap column;
+        width: 90vw;
+        margin: auto;
+    }
+    .proj-card-thumb .card-thumb { height: 330px; }
+
+    /* Footer */
+    .footer { padding: 0px 0px 40px 0px; }
+    .footer-content { width: 80vw; }
+    .footer-main { display: flex; }
+    .footer-head {
+        padding: 70px 0px;
+        text-align: start;
+    }
+    .footer-title { text-align: start; }
+    
+    /* Form footer */
+    .form { width: 30vw; }
+    .form-input, .form-message {
+        width: 30vw;
+        margin: auto;
+    }
+
+    .footer-rings {
+        position: absolute;
+        right: 620px;
+        top: 290px;
+    }
+
+    .form > .btn-fourth {
+        padding: 32px 0px 85px 0px;
+        align-self: flex-end;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    /* Header */
+    .header {
+        padding-bottom: 62px;
+        position: relative;
+        width: 80vw;
+    }
+
+    .header > .nav-bar {
+        position: absolute;
+        right: 30px;
+    }
+
+    /* Hero */
+    .hero {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .hero-patterns > .hero-rings {
+        right: 400px;
+    }
+
+    .hero-patterns > .hero-circle {
+        left: 85px;
+    }
+
+    .image-mask {
+        position: absolute;
+        width: 490px;
+        height: 720px;
+        left: 150px;
+        top: -125px;
+        z-index: 1;
+    }
+
+    .main-image {
+        border: 1px solid var(--color-2);
+        position: absolute;
+        width: 490px;
+        height: 720px;
+        left: 150px;
+        top: -125px;
+        z-index: 0;
+    }
+
+    .hero-title {
+        width: 706px;
+        font-size: 8.8rem;
+        font-weight: 700;
+        line-height: 8.8rem;
+        letter-spacing: -2.5px;
+    }
+
+    .hero-subtitle {
+        padding: 165px 0px 66px 0px;
+        width: 445px;
+    }
+    
+    .title-1::after {
+        content: none;
+    }
+
+    /* Experience */
+    .experience {
+        width: 80vw;
+    }
+    .exp-rings {
+        right: -360px;
+    }
+
+    /* Projects */
+    .projects {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .proj-cards {
+        width: 80vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .proj-card-thumb .card-thumb { height: 420px; }
+
+    /* Footer */
+    .footer-rings {
+        position: absolute;
+        right: 920px;
+        top: 290px;
+    }
+
+    /* Form footer */
+    .form { width: 40vw; }
+    .form-input, .form-message {
+        width: 40vw;
+        margin: auto;
+    }
+}
+
+@media (min-width: 2000px) {
+    .header {
+        width: 60vw;
+    }
+    
+    .header > .nav-bar {
+        position: absolute;
+        right: 230px;
+    }
+    
+    .hero {
+        width: 60vw;
+    }
+    
+    .projects {
+        width: 60vw;
+    }
+    .proj-cards {
+        width: 60vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .proj-card-thumb .card-thumb { height: 560px; }
+
+    .footer-content {
+        width: 60vw;
+    }
+}

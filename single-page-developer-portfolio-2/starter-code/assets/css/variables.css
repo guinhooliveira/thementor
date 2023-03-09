@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+    
+    /*Colors*/
+    --color-1: #151515;
+    --color-2: #4EE1A0;
+    --color-3: #242424;
+    --color-4: #D9D9D9;
+    --color-5: #FFFFFF;
+}
+
+body, html {
+    overflow-x: hidden;
+    background-color: var(--color-1);
+}
+
+/* Typography */
+
+.head-xl {
+    font-size: 8.8rem;
+    font-weight: 700;
+    line-height: 8.8rem;
+    letter-spacing: -2.5px;
+}
+
+.head-l {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 5.6rem;
+    letter-spacing: -1.5px;
+}
+
+.head-m {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    letter-spacing: -0.33px;
+}
+
+.head-s {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    color: var(--color-4);
+}
+
+.body-l {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    color: var(--color-4);
+}
+
+/* Interactive Elements */
+.btn-primary {
+    width: 120px;
+    height: 38px;
+}
+
+.btn-secondary {
+    width: 138px;
+    height: 38px;
+}
+
+.btn-third {
+    width: 103px;
+    height: 38px;
+}
+
+.btn-fourth {
+    width: 144px;
+    height: 38px;
+}
+
+/* Primary */
+.btn {
+    border: none;
+    border-bottom: 2px;
+    background: transparent;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 2.6rem;
+    letter-spacing: 2.29px;
+    color: var(--color-5);
+}
+
+.btn-border {
+    padding-top: 5px;
+    display: block;
+    border-bottom: 2px solid var(--color-2);
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--color-2);
+    transition: color .5s;
+}
+
+/* Others */
+.divider {
+    margin: 40px 0px;
+    border-bottom: 1px solid var(--color-4);
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/media-queries.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Single-page developer portfolio</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-logo head-m">adamkeyes</div>
+      <menu class="nav-bar">
+        <img src="assets/images/icon-github.svg" alt="">
+        <img src="assets/images/icon-frontend-mentor.svg" alt="">
+        <img src="assets/images/icon-linkedin.svg" alt="">
+        <img src="assets/images/icon-twitter.svg" alt="">
+      </menu>
+    </header>
+    <main class="hero">
+      <section class="hero-images">
+        <div class="hero-patterns">
+          <img class="hero-rings" src="assets/images/pattern-rings.svg" alt="rings">
+          <img class="hero-circle" src="assets/images/pattern-circle.svg" alt="circle">
+        </div>
+        <div class="image-mask"></div>
+        <picture class="hero-main-image">
+          <source class="main-image" srcset="assets/images/image-profile-desktop.webp" media="(min-width: 1024px)">
+          <source class="main-image" srcset="assets/images/image-profile-tablet.webp" media="(min-width: 768px)">
+          <img class="main-image" srcset="assets/images/image-profile-mobile.webp 1x" alt="main image">
+        </picture>
+      </section>
+      <section class="hero-content">
+        <div class="hero-title">
+          <span class="title-1">Nice to </span>
+          meet you!
+          I'm <span class="text-border">Adam Keyes</span>.
+        </div>
+        <div class="hero-subtitle head-s">
+          Based in the UK, I'm a front-end developer passionate about
+          building accessible web apps that users love.
+        </div>
+        <div class="btn-primary">
+          <button class="btn">Contact me</button>
+          <span class="btn-border"></span>
+        </div>
+      </section>
+      <aside class="experience">
+        <hr class="divider">
+        <div class="experience-content">
+          <div class="exp-card">
+            <div class="exp-title">HTML</div>
+            <div class="exp-subtitle head-s">4 Years Experience</div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-title">CSS</div>
+            <div class="exp-subtitle head-s">4 Years Experience</div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-title">JavaScript</div>
+            <div class="exp-subtitle head-s">4 Years Experience</div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-title">Accessibility</div>
+            <div class="exp-subtitle head-s">4 Years Experience</div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-title">React</div>
+            <div class="exp-subtitle head-s">3 Years Experience</div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-title">Sass</div>
+            <div class="exp-subtitle head-s">3 Years Experience</div>
+          </div>
+        </div>
+        <img class="exp-rings" src="assets/images/pattern-rings.svg" alt="rings">
+        <hr class="divider divider-2">
+      </aside>
+      <section class="projects">
+          <div class="projects-header">
+            <div class="proj-title">Projects</div>
+            <div class="btn-primary">
+              <button class="btn">Contact me</button>
+              <span class="btn-border"></span>
+            </div>
+          </div>
+          <div class="proj-cards">
+            <div class="card-content">
+              <picture class="proj-card-thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-1-large.webp" media="(min-width: 1024px)" alt="card thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-1-large.webp" media="(min-width: 768px)" alt="card thumb">
+                <img class="card-thumb" srcset="assets/images/thumbnail-project-1-small.webp 2x" alt="card thumb">
+              </picture>
+              <div class="proj-card-title head-m">Design portfolio</div>
+              <div class="proj-card-subtitle body-l">HTML CSS</div>
+              <div class="proj-card-btn">
+                <div class="btn-secondary">
+                  <div class="btn">View project</div>
+                  <span class="btn-border"></span>
+                </div>
+                <div class="btn-third">
+                  <div class="btn">View code</div>
+                  <span class="btn-border"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <picture class="proj-card-thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-2-large.webp" media="(min-width: 1024px)" alt="card thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-2-large.webp" media="(min-width: 768px)" alt="card thumb">
+                <img class="card-thumb" srcset="assets/images/thumbnail-project-2-small.webp 2x" alt="card thumb">
+              </picture>
+              <div class="proj-card-title head-m">E-learning landing page</div>
+              <div class="proj-card-subtitle body-l">HTML CSS</div>
+              <div class="proj-card-btn">
+                <div class="btn-secondary">
+                  <div class="btn">View project</div>
+                  <span class="btn-border"></span>
+                </div>
+                <div class="btn-third">
+                  <div class="btn">View code</div>
+                  <span class="btn-border"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <picture class="proj-card-thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-3-large.webp" media="(min-width: 1024px)" alt="card thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-3-large.webp" media="(min-width: 768px)" alt="card thumb">
+                <img class="card-thumb" srcset="assets/images/thumbnail-project-3-small.webp 2x" alt="card thumb">
+              </picture>
+              <div class="proj-card-title head-m">Todo web app</div>
+              <div class="proj-card-subtitle body-l">HTML CSS JavaScript</div>
+              <div class="proj-card-btn">
+                <div class="btn-secondary">
+                  <div class="btn">View project</div>
+                  <span class="btn-border"></span>
+                </div>
+                <div class="btn-third">
+                  <div class="btn">View code</div>
+                  <span class="btn-border"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <picture class="proj-card-thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-4-large.webp" media="(min-width: 1024px)" alt="card thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-4-large.webp" media="(min-width: 768px)" alt="card thumb">
+                <img class="card-thumb" srcset="assets/images/thumbnail-project-4-small.webp 2x" alt="card thumb">
+              </picture>
+              <div class="proj-card-title head-m">Entertainment web app</div>
+              <div class="proj-card-subtitle body-l">HTML CSS JavaScript</div>
+              <div class="proj-card-btn">
+                <div class="btn-secondary">
+                  <div class="btn">View project</div>
+                  <span class="btn-border"></span>
+                </div>
+                <div class="btn-third">
+                  <div class="btn">View code</div>
+                  <span class="btn-border"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <picture class="proj-card-thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-5-large.webp" media="(min-width: 1024px)" alt="card thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-5-large.webp" media="(min-width: 768px)" alt="card thumb">
+                <img class="card-thumb" srcset="assets/images/thumbnail-project-5-small.webp 2x" alt="card thumb">
+              </picture>
+              <div class="proj-card-title head-m">Memory Game</div>
+              <div class="proj-card-subtitle body-l">HTML CSS JavaScript</div>
+              <div class="proj-card-btn">
+                <div class="btn-secondary">
+                  <div class="btn">View project</div>
+                  <span class="btn-border"></span>
+                </div>
+                <div class="btn-third">
+                  <div class="btn">View code</div>
+                  <span class="btn-border"></span>
+                </div>
+            </div>
+            </div>
+            <div class="card-content">
+              <picture class="proj-card-thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-6-large.webp" media="(min-width: 1024px)" alt="card thumb">
+                <source class="card-thumb" srcset="assets/images/thumbnail-project-6-large.webp" media="(min-width: 768px)" alt="card thumb">
+                <img class="card-thumb" srcset="assets/images/thumbnail-project-6-small.webp 2x" alt="card thumb">
+              </picture>
+              <div class="proj-card-title head-m">Art gallery showcase</div>
+              <div class="proj-card-subtitle body-l">HTML CSS JavaScript</div>
+              <div class="proj-card-btn">
+                <div class="btn-secondary">
+                  <div class="btn">View project</div>
+                  <span class="btn-border"></span>
+                </div>
+                <div class="btn-third">
+                  <div class="btn">View code</div>
+                  <span class="btn-border"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-head">
+          <div class="footer-title">Contact</div>
+          <div class="footer-subtitle head-s">
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+          </div>
+        </div>
+        <form action="#" class="form">
+          <input type="text" class="form-input head-s" id="name" placeholder="Name"></input>
+          <input type="text" class="form-input head-s" id="email" placeholder="email"></input>
+          <textarea class="form-message head-s" name="form-message" id="message" cols="80" rows="3" placeholder="Message"></textarea>
+          <img class="footer-rings" src="assets/images/pattern-rings.svg" alt="rings">
+          <div class="btn-fourth">
+            <div class="btn">Send Message</div>
+            <span class="btn-border"></span>
+          </div>
+        </form>
+      </div>
+      <hr class="divider">
+      <div class="footer-nav">
+        <div class="footer-nav-title head-m">adamkeyes</div>
+        <div class="footer-images">
+          <img src="assets/images/icon-github.svg" alt="">
+          <img src="assets/images/icon-frontend-mentor.svg" alt="">
+          <img src="assets/images/icon-linkedin.svg" alt="">
+          <img src="assets/images/icon-twitter.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

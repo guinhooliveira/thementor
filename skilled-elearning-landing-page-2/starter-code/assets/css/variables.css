@@ -1,0 +1,139 @@
+/* ================= *
+*    Variables       *
+*  ================= */
+
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body, html {
+    background: var(--bg-linear);
+    overflow-x: hidden;
+}
+
+:root {
+    font-size: 62.5%;
+
+    /* Color palette */
+    --color-1: #666CA3;
+    --color-2: #13183F;
+    --color-3: #83869A;
+    --color-4: #F74780;
+    --color-5: #FFA7C3;
+    --white: #FFFFFF;
+
+    /* Linear Gradients */
+    --linear-1: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    --linear-2: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    --bg-linear: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+}
+
+/* ================= *
+*    Typography      *
+*  ================= */
+
+/* Heading */
+.heading-xl, .heading-l, .heading-m, .heading-s { font-weight: 800; color: var(--color-2); }
+.heading-xl { font-size: 5.6rem; line-height: 7.1rem; }
+.heading-l { font-size: 4rem; line-height: 5rem; }
+.heading-m { font-size: 3.2rem; line-height: 4rem; }
+.heading-s { font-size: 2.4rem; line-height: 2.8rem; }
+
+/* Body */
+.body-m { font-weight: 500; font-size: 1.8rem; line-height: 2.8rem; }
+.body-s { font-weight: 700; font-size: 1.6rem; line-height: 2.8rem; color: var(--color-3) }
+
+/* ================= *
+*    Buttons         *
+*  ================= */
+
+.btn-primary, .btn-secondary, .btn-colorful {
+    width: 167px;
+    height: 56px;
+    border: none;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: var(--white);
+}
+
+/* Button 1 */
+.btn-primary {
+    border-radius: 2.8rem;
+    background: var(--color-2);
+    font-weight: 700;
+    z-index: 1;
+}
+.btn-primary:hover {
+    cursor: pointer;
+    background: var(--color-1);
+    transition: background .5s;
+}
+
+/* Button 2 */
+.btn-secondary {
+    border-radius: 2.8rem;
+    background: var(--linear-2);
+    font-weight: 700;
+}
+.btn-secondary:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    transition: background 1s;
+}
+
+/* Button 3 */
+.btn-colorful {
+    padding: 16px;
+    border-radius: 3.15rem;
+    background: var(--linear-1);
+    font-weight: 700;
+}
+.btn-colorful:hover {
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    transition: background .5s;
+}
+
+/* Button Default */
+.btn-default {
+    width: 104px;
+    height: 28px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: var(--color-4);
+}
+.btn-default:hover {
+    color: var(--color-5);
+    cursor: pointer;
+    transition: color .5s;
+}
+
+/* ================= *
+*    Media Queries   *
+*  ================= */
+@media (max-width: 768px) {
+    .btn-primary, .btn-secondary { 
+        width: 140px; 
+        height: 48px; 
+        font-size: 1.6rem; 
+        line-height: 2.8rem; 
+    }
+    .heading-xl { font-size: 4rem; line-height: 5rem; }
+    .heading-s { font-size:2rem; line-height: 2.52rem; }
+    .body-s { font-weight: 500; line-height: 2.6rem; }
+    .btn-colorful { font-size: 1.6rem; line-height: 2.6rem; }
+}
+
+@media (min-width: 1024px) {
+    .body-s { font-size: 1.8rem; font-weight: 500; line-height: 2.6rem; }
+}
