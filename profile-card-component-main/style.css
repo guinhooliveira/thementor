@@ -97,6 +97,11 @@ body, html { background: var(--dark-cyan); }
     gap: 5px;
 }
 
+.divider {
+    border-top: 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+}
+
 @media (min-width: 375px) {
     .container__content { 
         margin-top: 13%;
