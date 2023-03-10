@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+ 
+    /* Colors */    
+
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body, html { background: var(--dark-cyan); }
+
+.card {
+    position: relative;
+    width: 326px;
+    background: white;
+    border-radius: 15px;
+}
+
+.card
+.card-bg { width: 326px; border-radius: 15px 15px 0px 0px; }
+
+.card__user {
+    position: absolute;
+    transform: translate(60% , -35%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.user-image { 
+    width: 105px; 
+    border-radius: 50px; 
+    border: 5px solid white;
+ }
+.user-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 1.4rem;
+    line-height: 1.0rem;
+}
+.user-name { color: var(--very-dark-desaturated-blue); }
+.user-age { color: var(--dark-gray); font-weight: 400; }
+.user-country { 
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--dark-gray);
+}
+.divider {
+    margin-top: 150px
+}
+
+.card__feed {
+    padding: 22px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.feed-value {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--very-dark-desaturated-blue);
+}
+.feed-status {
+    font-size: 1.0rem;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--dark-gray);
+}
+
+.feed-followers, .feed-likes, .feed-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (min-width: 375px) {
+    .container__content { 
+        margin-top: 13%;
+        display: flex;
+        justify-content: center;
+     }
+}
